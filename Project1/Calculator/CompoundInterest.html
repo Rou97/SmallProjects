@@ -4,12 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="CompoundInterest.css" />
+    <script src="CompoundInterest.js"></script>
     <title>CompoundInterest</title>
   </head>
   <body>
     <a href="../MoneyChimp.html"></a>
     <form action="" name="CompoundInterestForm" method="get">
-      <input type="number" />
+      <label>
+        Current Principal:
+        <input type="TEXT" id="p" />
+      </label>
+      <label>
+        Annual Addition:
+        <input type="TEXT" id="c" />
+      </label>
+      <label>
+        Years to grow:
+        <input type="TEXT" id="y" />
+      </label>
+      <label>
+        Interest Rate:
+        <input type="TEXT" id="r" />
+        %
+      </label>
+      <label>
+        Compound interest
+        <input type="TEXT" id="n" />
+        time(s) annually
+      </label>
+
+      <button onclick="calculate(event)">Calculate</button>
     </form>
+    <p id="result">Hola</p>
   </body>
 </html>
