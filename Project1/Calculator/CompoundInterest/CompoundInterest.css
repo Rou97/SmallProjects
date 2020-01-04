@@ -5,15 +5,32 @@ html {
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  margin: 1em 0 1em 1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 60em;
+  align-self: center;
+  background-color: yellow;
+  border: 2px solid black;
 }
 
 form {
-  background-color: yellow;
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1em;
+  padding-top: 3em;
+  box-sizing: border-box;
+  width: 100%;
+  align-self: center;
 }
 
 label {
@@ -28,6 +45,28 @@ input {
 }
 
 button {
-  margin: 2em 0 2em 0;
+  display: inline-block;
+  width: 10em;
   padding: 1em;
+  border: 0.1em solid #000000;
+  border-radius: 1em;
+  background-color: #ffffff;
+  margin: 4em 0 2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+h1 {
+  align-self: center;
+  margin-top: 0;
 }
