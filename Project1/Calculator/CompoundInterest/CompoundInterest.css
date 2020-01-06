@@ -12,6 +12,8 @@ body {
 a {
   text-decoration: none;
   margin: 1em 0 1em 1em;
+  align-self: center;
+  color: black;
 }
 
 .content {

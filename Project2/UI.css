@@ -5,21 +5,21 @@ html {
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
-  margin: 1em 0 1em 1em;
-  align-self: center;
   color: black;
+  font-size: 2em;
+  margin: 0.25em;
 }
 
-form {
-  background-color: yellow;
-}
-
-label {
-  display: block;
+h1 {
+  cursor: default;
 }
