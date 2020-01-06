@@ -19,3 +19,57 @@ a {
   font-size: 2em;
   margin: 0.25em;
 }
+
+a:hover {
+  /* text-decoration: line-through wavy #ff4e09; */
+  animation-name: changeBackground;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeBackground {
+  from {
+    background: rgb(0, 176, 155);
+    background: linear-gradient(
+      90deg,
+      rgba(150, 201, 61, 0),
+      rgba(0, 176, 155, 0) 100%
+    );
+  }
+
+  25% {
+    background: rgb(0, 176, 155);
+    background: linear-gradient(
+      90deg,
+      rgba(150, 201, 61, 0.25),
+      rgba(0, 176, 155, 0.25) 100%
+    );
+  }
+
+  50% {
+    background: rgb(0, 176, 155);
+    background: linear-gradient(
+      90deg,
+      rgba(150, 201, 61, 0.5),
+      rgba(0, 176, 155, 0.5) 100%
+    );
+  }
+
+  75% {
+    background: rgb(0, 176, 155);
+    background: linear-gradient(
+      90deg,
+      rgba(150, 201, 61, 0.75),
+      rgba(0, 176, 155, 0.75) 100%
+    );
+  }
+
+  to {
+    background: rgb(0, 176, 155);
+    background: linear-gradient(
+      90deg,
+      rgba(150, 201, 61, 1),
+      rgba(0, 176, 155, 1) 100%
+    );
+  }
+}
