@@ -30,7 +30,36 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 0.05em rgba(206, 179, 179, 0.5);
+  margin: 2em;
+}
+
+span:hover {
+  animation-name: shadow;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0 0 0 0.1em rgba(206, 179, 179, 0.23);
+  }
+
+  25% {
+    box-shadow: 0 0 0.75em 0.2em rgba(0, 0, 0, 0.23);
+  }
+
+  50% {
+    box-shadow: 0 0 1.5em 0.3em rgba(0, 0, 0, 0.23);
+  }
+
+  75% {
+    box-shadow: 0 0 2.25em 0.4em rgba(0, 0, 0, 0.23);
+  }
+
+  to {
+    box-shadow: 0 0 3em 0.5em rgba(0, 0, 0, 0.23);
+  }
 }
 
 i {
