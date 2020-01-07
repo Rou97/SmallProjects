@@ -11,5 +11,14 @@ function calculate(e) {
     CAGR *= 100;
 
     result.innerHTML = "Compound Annual Growth Rate: " + (CAGR.toFixed(2)) + "%";
+}
 
+function showInfo() {
+    let card = document.getElementById('card');
+
+    if (card.style.display === 'flex') {
+        card.style.display = 'none';
+    } else {
+        card.style.display = 'flex';
+    }
 }

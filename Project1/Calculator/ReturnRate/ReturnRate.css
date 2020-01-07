@@ -79,3 +79,17 @@ h1 {
   align-self: center;
   margin-top: 0;
 }
+
+.info {
+  align-self: center;
+  margin-top: 2em;
+}
+
+.card {
+  display: none;
+  width: 60em;
+  align-self: center;
+  margin-top: 2em;
+  background-color: yellow;
+  border: 2px solid black;
+}
