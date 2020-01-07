@@ -49,8 +49,8 @@ label {
   border-bottom: 1px solid black;
 }
 
-.form_field:focus {
-  background-color: #fff;
+.form_field:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 100px yellow inset;
 }
 
 button {
