@@ -10,21 +10,22 @@
   </head>
   <body>
     <a href="../../MoneyChimp.html">Home</a>
-    <form action="" name="ReturnRateForm" method="get">
-      <label>
-        Present Value:
-        <input type="TEXT" id="PV" />
-      </label>
-      <label>
-        Future Value:
-        <input type="TEXT" id="FV" />
-      </label>
-      <label>
-        Years:
-        <input type="TEXT" id="y" />
-      </label>
-      <button onclick="calculate(event)">Calculate</button>
-    </form>
-    <p id="result">Reult</p>
+    <div class="content">
+      <form action="" name="ReturnRateForm" method="get">
+        <label>
+          Present Value: <input type="TEXT" id="PV" class="form_field" />
+        </label>
+        <label>
+          Future Value:
+          <input type="TEXT" id="FV" class="form_field" />
+        </label>
+        <label>
+          Years:
+          <input type="TEXT" id="y" class="form_field" />
+        </label>
+        <button onclick="calculate(event)">Calculate</button>
+      </form>
+      <h1 id="result">Result</h1>
+    </div>
   </body>
 </html>
