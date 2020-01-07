@@ -8,13 +8,17 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: rgb(150, 180, 230);
+  /* background-color: rgba(132, 196, 255, 0.801); */
 }
 
 a {
   text-decoration: none;
-  margin: 1em 0 1em 1em;
+  margin: 2em 0 0.5em 1em;
   align-self: center;
   color: black;
+  font-weight: 700;
+  font-size: 1.3em;
 }
 
 .content {
@@ -22,8 +26,11 @@ a {
   flex-direction: column;
   width: 60em;
   align-self: center;
-  background-color: yellow;
-  border: 2px solid black;
+  background-color: white;
+  /* border: 2px solid black; */
+  margin-top: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 2em 1px rgba(0, 0, 0, 0.75);
 }
 
 form {
@@ -42,6 +49,7 @@ label {
   justify-content: space-between;
   margin: 0.1em;
   font-size: 1.2em;
+  margin: 0.5em;
 }
 
 .form_field {
@@ -51,7 +59,7 @@ label {
 }
 
 .form_field:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 100px yellow inset;
+  -webkit-box-shadow: 0 0 0px 100px white inset;
 }
 
 button {
@@ -83,18 +91,21 @@ h1 {
 
 .info {
   align-self: center;
-  margin-top: 2em;
+  margin: 2.5em 0 2.5em 0;
+}
+i {
+  padding: 0 1em 0 1em;
 }
 
 .card {
   display: none;
   width: 60em;
   align-self: center;
-  margin-top: 2em;
-  background-color: yellow;
-  border: 2px solid black;
+  background-color: white;
   flex-direction: column;
   padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 2em 1px rgba(0, 0, 0, 0.75);
 }
 
 h2 {
