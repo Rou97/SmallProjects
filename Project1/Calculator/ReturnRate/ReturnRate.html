@@ -4,29 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="SimpleInterest.css" />
-    <script src="SimpleInterest.js"></script>
-    <title>Simple Interest</title>
+    <link rel="stylesheet" href="ReturnRate.css" />
+    <script src="ReturnRate.js"></script>
+    <title>Return Rate</title>
   </head>
   <body>
     <a href="../../MoneyChimp.html">Home</a>
-    <form action="" name="SimpleInterestForm" method="get">
+    <form action="" name="ReturnRateForm" method="get">
       <label>
-        Current Principal:
-        <input type="TEXT" id="p" />
+        Present Value:
+        <input type="TEXT" id="PV" />
       </label>
-
       <label>
-        Years to grow:
+        Future Value:
+        <input type="TEXT" id="FV" />
+      </label>
+      <label>
+        Years:
         <input type="TEXT" id="y" />
-      </label>
-      <label>
-        Interest Rate:
-        <input type="TEXT" id="r" />
-        %
       </label>
       <button onclick="calculate(event)">Calculate</button>
     </form>
-    <p id="result">Result</p>
+    <p id="result">Reult</p>
   </body>
 </html>
