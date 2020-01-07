@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -31,7 +32,7 @@ form {
   align-items: center;
   padding-top: 3em;
   box-sizing: border-box;
-  width: 15em;
+  width: 20em;
   align-self: center;
 }
 
