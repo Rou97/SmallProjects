@@ -11,5 +11,4 @@ function calculate(e) {
 
     result.innerHTML = "The total amount is " + (interest + parseInt(p));
     result.innerHTML += "<br> The interest is " + interest;
-
 }

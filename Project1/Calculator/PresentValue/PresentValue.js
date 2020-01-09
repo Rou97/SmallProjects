@@ -7,14 +7,7 @@ function calculate(e) {
     let r = document.getElementById("r").value;
     let result = document.getElementById("result");
 
-    console.log(FV);
-    console.log(y);
-    console.log(r);
-
     let PV = (FV / Math.pow((1 + (r / 100)), (y)));
 
-    console.log(PV)
-
     result.innerHTML = "Present Value: " + PV.toFixed(2);
-
 }

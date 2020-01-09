@@ -4,29 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="SimpleInterest.css" />
+    <link rel="stylesheet" href="../Calculator.css" />
     <script src="SimpleInterest.js"></script>
+    <script src="../Calculator.js"></script>
+    <script src="https://kit.fontawesome.com/0cf11e0037.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <title>Simple Interest</title>
   </head>
   <body>
     <a href="../../MoneyChimp.html">Home</a>
-    <form action="" name="SimpleInterestForm" method="get">
-      <label>
-        Current Principal:
-        <input type="TEXT" id="p" />
-      </label>
+    <div class="content">
+      <form action="" name="SimpleInterestForm" method="get">
+        <label>
+          Current Principal:
+          <input type="TEXT" id="p" />
+        </label>
+  
+        <label>
+          Years to grow:
+          <input type="TEXT" id="y" />
+        </label>
+        <label>
+          Interest Rate:
+          <input type="TEXT" id="r" />
+          %
+        </label>
+        <button onclick="calculate(event)">Calculate</button>
+      </form>
+      <h1 id="result">Result</h1>
+    </div>
 
-      <label>
-        Years to grow:
-        <input type="TEXT" id="y" />
-      </label>
-      <label>
-        Interest Rate:
-        <input type="TEXT" id="r" />
-        %
-      </label>
-      <button onclick="calculate(event)">Calculate</button>
-    </form>
-    <p id="result">Result</p>
+    <div class="info" onclick="showInfo()"">
+      <i class="fas fa-arrow-right" id="arrow1"></i>
+      Click me to know more about <b>return rate</b>
+      <i class="fas fa-arrow-left" id="arrow2"></i>
+    </div>
+
+    <div class="card" id="card">
+      <h2>Simple Interest</h2>
+      
+      <p>
+        Simple interest is calculated only on the principal amount, 
+        or on that portion of the principal amount that remains. 
+        It excludes the effect of compounding. 
+        Simple interest can be applied over a time period other than a year, 
+        for example, every month.
+      </p>
+  </div>
   </body>
 </html>

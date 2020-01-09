@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="CompoundInterest.css" />
+    <link rel="stylesheet" href="../Calculator.css"/>
     <script src="CompoundInterest.js"></script>
+    <script src="../Calculator.js"></script>
+    <script src="https://kit.fontawesome.com/0cf11e0037.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <title>Compound Interest</title>
   </head>
   <body>
@@ -37,5 +40,31 @@
       </form>
       <h1 id="result">Result</h1>
     </div>
+
+    <div class="info" onclick="showInfo()"">
+      <i class="fas fa-arrow-right" id="arrow1"></i>
+      Click me to know more about <b>compound interest</b>
+      <i class="fas fa-arrow-left" id="arrow2"></i>
+    </div>
+
+    <div class="card" id="card">
+      <h2>Compound Interest</h2>
+      <h3>Compound Interest Formula</h3>
+      <p>
+          FV   =   P (1  +  r / n) <sup>Yn</sup> <br><br>
+  
+          where P is the starting principal, r is the annual interest rate, 
+          Y is the number of years invested, and n is the number of compounding periods per year.
+          FV is the future value, meaning the amount the principal grows to after Y years.
+      </p>
+      <h3>Understanding the Formulas</h3>
+      <p>
+        Suppose you open an account that pays a guaranteed interest rate, 
+        compounded annually. You make no further contributions; 
+        you just leave your money alone and let compound interest work its magic.
+        The balance your account has grown to at some point in the future 
+        is known as the future value of your starting principal.
+      </p>
+  </div>
   </body>
 </html>
