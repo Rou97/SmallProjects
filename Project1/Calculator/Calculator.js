@@ -1,3 +1,5 @@
+'use strict'
+
 function showInfo() {
     let card = document.getElementById('card');
     let arrow1 = document.getElementById('arrow1')
