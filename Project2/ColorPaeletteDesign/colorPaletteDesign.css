@@ -21,6 +21,7 @@ a {
 
 .wrap-cards {
   display: flex;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -90,4 +91,16 @@ h3 {
   width: 100%;
   height: 50%;
   background-color: #f8fbff;
+}
+
+.c9-media {
+  width: 100%;
+  height: 50%;
+  background-color: #c84608;
+}
+
+.c10-media {
+  width: 100%;
+  height: 50%;
+  background-color: #ffc4a7;
 }
