@@ -1,0 +1,40 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e2e6f6;
+}
+
+.header {
+  width: 100vw;
+  height: 20vh;
+  background-color: red;
+}
+
+.container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+}
+
+.legend {
+  width: 20vw;
+  height: 80vh;
+  background-color: blue;
+}
+
+.game {
+  width: 80vw;
+  height: 80vh;
+  background-color: green;
+  display: flex;
+}
+
+.game-container {
+  display: flex;
+}
