@@ -20,6 +20,9 @@ body {
 .gridsquare {
   width: 4em;
   height: 4em;
-  background-color: red;
+  border: 1px solid black;
+  background-color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
