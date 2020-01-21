@@ -21,12 +21,49 @@ function genDivs(v) {
     }
 }
 
+let a;
+let b;
+
 function move(id) {
-    if (id.toElement.id === '') {
-        console.log(id.toElement.parentNode.id);
+
+    if (a === undefined) {
+
+        if (id.toElement.id === '') {
+            a = id.toElement.parentNode.id;
+        } else {
+            a = id.toElement.id;
+        }
+
     } else {
-        console.log(id.toElement.id);
+
+        if (id.toElement.id === '') {
+            b = id.toElement.parentNode.id;
+        } else {
+            b = id.toElement.id;
+        }
+
     }
+
+    if (b !== undefined) {
+        let c = document.getElementById(a);
+        let d = document.getElementById(b);
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+
+        let newElement = document.createElement("i");
+        newElement.className = c.childNodes[0].className;
+        //falta color de la pieza
+        d.appendChild(newElement);
+        c.childNodes[0].className = "";
+
+        a = undefined;
+        b = undefined;
+
+    }
+
 }
 
 function addChessPiece(i, j, cell) {
