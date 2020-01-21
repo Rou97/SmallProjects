@@ -11,11 +11,21 @@ function genDivs(v) {
         for (let j = 1; j <= v; j++) {
             let cell = document.createElement("div");
             cell.className = "gridsquare";
+            cell.id = `p${(i * v) + j}`;
+            cell.addEventListener("click", move);
             row.appendChild(cell);
             addChessPiece(i, j, cell);
 
         }
         e.appendChild(row);
+    }
+}
+
+function move(id) {
+    if (id.toElement.id === '') {
+        console.log(id.toElement.parentNode.id);
+    } else {
+        console.log(id.toElement.id);
     }
 }
 
