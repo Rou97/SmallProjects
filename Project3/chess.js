@@ -1,5 +1,9 @@
 'use strict';
 
+let a;
+let b;
+let color;
+
 function genDivs(v) {
     let a = document.getElementById("a");
     a.parentNode.removeChild(a);
@@ -21,17 +25,16 @@ function genDivs(v) {
     }
 }
 
-let a;
-let b;
-
 function move(id) {
 
     if (a === undefined) {
 
         if (id.toElement.id === '') {
             a = id.toElement.parentNode.id;
+            color = id.toElement.style.color;
         } else {
             a = id.toElement.id;
+            color = id.toElement.childNodes[0].style.color;
         }
 
     } else {
@@ -48,14 +51,9 @@ function move(id) {
         let c = document.getElementById(a);
         let d = document.getElementById(b);
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-
         let newElement = document.createElement("i");
         newElement.className = c.childNodes[0].className;
-        //falta color de la pieza
+        newElement.style.color = color;
         d.appendChild(newElement);
         c.childNodes[0].className = "";
 
