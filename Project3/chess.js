@@ -51,6 +51,13 @@ function move(id) {
         let c = document.getElementById(a);
         let d = document.getElementById(b);
 
+        if (color === 'red' &&
+            (id.toElement.style.color === '' && id.toElement.className !== 'gridsquare')) {
+            id.toElement.parentNode.removeChild(id.toElement);
+        } else if (color === '' && id.toElement.style.color === 'red') {
+            id.toElement.parentNode.removeChild(id.toElement);
+        }
+
         let newElement = document.createElement("i");
         newElement.className = c.childNodes[0].className;
         newElement.style.color = color;
